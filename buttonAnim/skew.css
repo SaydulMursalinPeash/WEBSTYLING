@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -7,4 +8,61 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
+}
+.skew_button{
+    height: 60px;
+    width: 100px;
+    border: none;
+    background-color: rgba(144, 133, 128, 0.408);
+    transform: skew(-25deg);
+     display: flex;
+     align-items: center;
+     box-sizing: border-box;
+     backdrop-filter: blur(5px);
+     justify-content: center;z-index: 0;
+}
+p{
+    transform:skew(25deg);
+    color: rgb(255, 56, 56);
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 20px;
+    position: absolute;
+}
+.back{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(241, 210, 210, 0.558);
+    visibility: hidden;
+    z-index: -1;
+}
+.moving{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skew_button:hover .back{
+    height: 70px;
+    width: 110px;
+    transition: all 0.3s;
+    visibility: visible;
+    
+}
+.mov{
+    background-color: rgba(52, 124, 226, 0.292);
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    transform: translate(-100%) skew(26deg);
+
+}
+.skew_button:hover .mov{
+
+ transform: translate(100% );
+ transition: all 0.5s;
 }
