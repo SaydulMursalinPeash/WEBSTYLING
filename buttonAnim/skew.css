@@ -58,7 +58,7 @@ p{
     position:absolute;
     height: 100%;
     width: 100%;
-    transform: translate(-100%) skew(26deg);
+    transform: translate(-100%) skew(25deg);
 
 }
 .skew_button:hover .mov{
